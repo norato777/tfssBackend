@@ -1,0 +1,61 @@
+###
+
+
+
+###
+///get product
+post http://localhost:3001/users/ HTTP/1.1
+
+{
+      "name":"dumar " ,
+      "email":"dumar1959@hotmail.com",
+    "password": "3213213131312",
+    "code": "123456789",
+ 
+  
+}
+
+63bf11b9e2a554f00d22b32e
+
+###
+// add product
+
+GET http://localhost:3001/products/63c785dbc159b748eef28c5f HTTP/1.1
+###
+
+/// add usuario
+GET http://localhost:3001/users HTTP/1.1
+63c56a60accb038ca0f978c0
+
+
+
+###
+post  http://localhost:3001/favorites HTTP/1.1
+
+{
+    "user":"63c56a60accb038ca0f978c0",
+    "product":"63bf11b9e2a554f00d22b32e"
+    
+}
+
+
+
+###
+DELETE   http://localhost:3001/favorites/63bf11b9e2a554f00d22b32e HTTP/1.1
+
+
+
+
+###
+get http://localhost:3001/favorites/63c56a60accb038ca0f978c0 HTTP/1.1
+
+
+
+
+###
+POST   http://localhost:3001/forgotpassword HTTP/1.1
+
+{
+    "email":"thefullstakstore@gmail.com"
+
+}
